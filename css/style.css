@@ -8,10 +8,20 @@ body{
   background-color: #fff;
   margin:0;
   padding:0;
+  font-size: 12pt;
 }
 
 h1,h2,h3,h4,h5,h6, .people, .links{
   font-family: 'VT323', monospace;
+}
+
+a{
+  text-decoration: none;
+}
+
+a[href^="tel:"], code{
+  font-family:monospace;
+  font-size: .8em;
 }
 
 #top{
@@ -53,7 +63,7 @@ h1,h2,h3,h4,h5,h6, .people, .links{
 }
 
 .people > div > a{
-  font-size:1.4em;
+  font-size:1.6em;
   display:block;
 }
 
@@ -61,7 +71,11 @@ h1,h2,h3,h4,h5,h6, .people, .links{
   list-style-type:none;
   padding: 0;
   margin-left:5px;
+  /*font-family: 'Open Sans', sans-serif;*/
 }
+/*.people li > strong{
+  font-family: 'VT323', monospace;
+}*/
 
 .people li > a{
   display: block;
