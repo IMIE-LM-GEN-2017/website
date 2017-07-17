@@ -28,7 +28,7 @@ h1,h2,h3,h4,h5,h6, .people, .links{
   transform: translateX(-50%);
 }
 #bottom{
-  width:960px;
+  max-width:960px;
   margin:50px auto 0 auto;
 }
 
