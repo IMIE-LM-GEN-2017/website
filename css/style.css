@@ -1,0 +1,203 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  background-color: #fff;
+  color:#333;
+  margin:0;
+  padding:0;
+  font-size: 12pt;
+}
+
+h1,h2,h3,h4,h5,h6, .people, .links{
+  font-family: 'VT323', monospace;
+}
+
+a, a:visited{
+  text-decoration: none;
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color:blue;
+}
+a:hover{
+  color:purple;
+}
+
+a[href^="tel:"], code{
+  font-family:monospace;
+  font-size: .8em;
+}
+
+strong, em{
+   color:#000;
+}
+
+#top{
+  background-color: #9badb7;
+  height:30vh;
+}
+#image{
+  text-align: center;
+  margin:0;
+  padding:0;
+  position:absolute;
+  top:calc(30vh + -153px);
+  left:50%;
+  transform: translateX(-50%);
+}
+#bottom{
+  max-width:960px;
+  margin:50px auto 0 auto;
+}
+
+.people{
+  /*width: 100%;
+  display:flex; */
+}
+
+.people > div{
+  margin-bottom: 15px;
+  min-height: 200px;
+  background-color:rgba(77,77,77,.1);
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.people > div.found{
+  opacity:.3;
+  background-color:rgba(77,200,77,.3);
+}
+.people > div.found:hover{
+  opacity: 1;
+}
+
+.people > div > a{
+  font-size:1.6em;
+  display:block;
+}
+
+.people ul{
+  list-style-type:none;
+  padding: 0;
+  margin-left:5px;
+  /*font-family: 'Open Sans', sans-serif;*/
+}
+/*.people li > strong{
+  font-family: 'VT323', monospace;
+}*/
+
+.people li > a{
+  display: block;
+  margin-left:10px;
+}
+.people li > p{
+  margin:0 0 0 10px;
+}
+
+.error{
+  color:darkred;
+}
+
+.success{
+  color:green;
+}
+
+.big{
+  font-size:1.2em;
+}
+
+.links{
+  display: flex;
+  width:100%;
+}
+
+.links >div{
+  flex: 1 1 auto;
+}
+
+.right{
+  text-align:right;
+}
+
+a.active{
+  text-decoration: underline;
+  color:black;
+}
+
+/*
+ * Missed items
+ */
+.missed::before{
+  content:'\f06a';
+  font-family: FontAwesome;
+  margin-right:.5em;
+}
+
+.missed{
+  color:DarkOrange ;
+}
+.missed strong,
+.missed em{
+  color:orange;
+}
+
+/*
+ * Items seen
+ */
+.done::before{
+  content:'\f05d';
+  font-family: FontAwesome;
+  margin-right:.5em;
+}
+
+.done{
+  color:DarkGreen ;
+}
+.done strong,
+.done em{
+  color:green;
+}
+
+ul.items{
+  list-style-type: none;
+  padding: 0;
+}
+ul.items ul > li{
+   padding:0 1em;
+}
+/*
+ * Optionnal items
+ */
+ .optionnal::before{
+   content:'\f29c';
+   font-family: FontAwesome;
+   margin-right:.5em;
+ }
+
+ .optionnal{
+   color:lightblue ;
+ }
+ .optionnal strong,
+ .optionnal em{
+   color:DarkTurquoise;
+ }
+/*
+ * Todo items
+ */
+ .todo::before{
+   content:'\f10c';
+   font-family: FontAwesome;
+   margin-right:.5em;
+ }
+/*
+ .todo{
+   color:lightblue ;
+ }
+ .todo strong,
+ .todo em{
+   color:DarkTurquoise;
+ }*/
