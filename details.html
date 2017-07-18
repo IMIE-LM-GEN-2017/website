@@ -28,19 +28,71 @@
     <h1>Studio321 - Détails des cours</h1>
     <p>Plan de cours proposé par le prof.</p>
 
-    <h2 id="-s1-2-jours-r-vision-de-html">Révision de HTML</h2>
-    <ul class='items'>
+    <ul>
+      <li><a href="#s1-3-jours-connaitre-les-rseaux">Réseaux &amp; virtualisation</a></li>
+      <li><a href="#s1-2-jours-r-vision-de-html">Révision de HTML</a></li>
+      <li><a href="#s2-1-jour-versionning">Versionning</a></li>
+      <li><a href="#s2-4-jours-base-de-donn-es">Base de données</a></li>
+      <li><a href="#s3-5-jours-javascript-introduction-la-programmation">Javascript, introduction à la <em>programmation</em></a></li>
+      <li><a href="#s3-4-10j-php-programmation-c-t-serveur">PHP, programmation côté serveur</a></li>
+      <li><a href="#s5-3j-nodejs-javascript-c-t-serveur">NodeJS: Javascript côté serveur</a></li>
+      <li><a href="#s5-s7-mode-projet">Mode projet</a></li>
+      <li><a href="#s8-aplication-hybride">Aplication hybride</a></li>
+      <!-- <li><a href="#s9-10-r-visions-approfondissements-exercices">Révisions, approfondissements, exercices</a></li> -->
+      <li><a href="#sx-divers">Divers</a></li>
+    </ul>
+
+    <h2 id="s1-3-jours-connaitre-les-r-seaux">Réseaux &amp; virtualisation</h2>
+    <ul class="items">
+      <li>Rappel de bases
+        <ul class="items">
+          <li class="done">Fonctionnement simplifié d'une requête</li>
+          <li class="done">DNS, fichiers hosts</li>
+        </ul>
+      </li>
+      <li>Pratique: Création d'un projet
+        <ul class="items">
+          <li class="done">Création d'un nom de domaine (Studio321.ovh)</li>
+          <li class="done">Création d'un hébergement VPS chez OVH</li>
+          <li>Administration via SSH
+            <ul class="items">
+              <li class="done">Installation d'un systeme LAMP</li>
+              <li class="done">Configuration de sous-domaines sur le serveur Apache</li>
+            </ul>
+          </li>
+          <li>Création des sous domaines</li>
+        </ul>
+      </li>
+      <li>Virtualisation
+        <ul class="items">
+          <li class="todo">Virtualbox + Ubuntu 16.10 server (<strong>Images a préparer</strong>)</li>
+          <li class="todo">Installation d&#39;Apache + PHP + mysql</li>
+          <li class="todo">Configuration de dossiers partagés dans <code>/var/www</code></li>
+          <li class="todo">Approche de solutions alternatives: Vagrant, Puppet, Ansible (survol)</li>
+          <li class="todo">Si possible, création d&#39;une box avec PuPHPet</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2 id="s1-2-jours-r-vision-de-html">Révision de HTML</h2>
+    <ul class="items">
       <li>Point sur les connaissances en HTML, CSS
-        <ul class='items'>
+        <ul class="items">
           <li class="done">Point sur les <strong>selecteurs CSS</strong> simples et complexes</li>
           <li class="done">Parler des outils tels que <strong>SASS</strong>/<strong>LESS</strong></li>
           <li class="done">Parler des <strong>frameworks CSS</strong> <em>Bootstrap</em>, <em>Foundation</em>, <em>Materialize</em>,..., et des starters comme <em>HTML Boilerplate</em>.</li>
           <li class="missed">Principes de <strong>responsive design</strong> en CSS</li>
         </ul>
       </li>
-      <li>Exemples et <strong>exercices</strong></li>
+      <li>Exemples et <strong>exercices</strong>
+        <ul class="items">
+          <li class="done">Création d'un portfolio <em>sans</em> framework css</li>
+          <li class="done">Création d'une page d'accueil pour un site marchand imaginaire</li>
+          <li class="done">Création d'un portfolio <em>avec</em> framework css</li>
+        </ul>
+      </li>
     </ul>
-    <h2 id="-s2-1-jour-versionning">Versionning</h2>
+    <h2 id="s2-1-jour-versionning">Versionning</h2>
     <ul class="items">
       <li>Présentation de <strong>GIT</strong> (démo de push/pull/reset, historique, ect)
         <ul class="items">
@@ -55,7 +107,7 @@
         </ul>
       </li>
     </ul>
-    <h2 id="-s2-4-jours-base-de-donn-es">Base de données</h2>
+    <h2 id="s2-4-jours-base-de-donn-es">Base de données</h2>
     <ul class="items">
       <li>Cours théorique:
         <ul class="items">
@@ -73,7 +125,7 @@
         </ul>
       </li>
     </ul>
-    <h2 id="-s3-5-jours-javascript-introduction-la-_programmation_">Javascript, introduction à la <em>programmation</em></h2>
+    <h2 id="s3-5-jours-javascript-introduction-la-programmation">Javascript, introduction à la <em>programmation</em></h2>
     <ul class="items">
       <li>Présentation</li>
       <li>Cours <strong>débutant</strong> (console.log)
@@ -82,7 +134,7 @@
           <li class="todo">Structures conditionnelles</li>
           <li class="todo">Boucles</li>
           <li class="todo">Fonctions</li>
-          <li class="todo">Objets <strong>POINT A DEVELOPPER: COMMENT APPORTER LA NOTION D&#39;OBJET ?</strong></li>
+          <li class="todo">Objets, prototypes</li>
         </ul>
       </li>
       <li><strong>Manipulation DOM</strong>: les sélecteurs:
@@ -108,7 +160,7 @@
         </ul>
       </li>
     </ul>
-    <h2 id="-s3-4-10j-php-programmation-c-t-serveur">PHP, programmation côté serveur</h2>
+    <h2 id="s3-4-10j-php-programmation-c-t-serveur">PHP, programmation côté serveur</h2>
     <ul class="items">
       <li>Bref historique de PHP et exemples de sites en PHP</li>
       <li>Cours <strong>débutant</strong>:
@@ -163,13 +215,13 @@
         </ul>
       </li>
     </ul>
-    <h2 id="-s5-3j-nodejs-javascript-c-t-serveur">NodeJS: Javascript côté serveur</h2>
+    <h2 id="s5-3j-nodejs-javascript-c-t-serveur">NodeJS: Javascript côté serveur</h2>
     <p>Cette partie sera abordée si on est dans les temps.</p>
     <ul class="items">
       <li class="todo">Node et NPM</li>
       <li class="todo">Exemple d&#39;api avec SailsJS</li>
       <li class="todo">Exemple de chat en websockets</li>
-      <li class="todo">Pour aller plus loin:
+      <li class="optionnal">Pour aller plus loin:
         <ul class="items">
           <li>ES6</li>
           <li>Webpack</li>
@@ -177,42 +229,44 @@
         </ul>
       </li>
     </ul>
-    <h2 id="-s5-s7-mode-projet">Mode projet</h2>
+    <h2 id="s5-s7-mode-projet">Mode projet</h2>
     <ul class="items">
-      <li class="todo">Cahier des charges
+      <li>Cahier des charges
         <ul class="items">
           <li class="todo">Définition du besoin, difficultés et choix techniques</li>
           <li class="todo">Wireframes</li>
           <li class="todo">Mockups</li>
         </ul>
       </li>
-      <li class="todo">Exercice avec un theme <strong>Wordpress</strong></li>
-      <li class="todo">Design de base de données</li>
-      <li class="todo"><strong>Framework</strong>
+      <li>Exercice avec un theme <strong>Wordpress</strong></li>
+      <li>Design de base de données</li>
+      <li><strong>Framework</strong>
         <ul class="items">
-          <li class="todo">Symfony</li>
-          <li class="todo">OU CakePHP</li>
-          <li class="todo">OU Laravel</li>
+          <li class="todo">Laravel</li>
           <li class="todo">=&gt; Introduction aux ORMS</li>
         </ul>
       </li>
-      <li class="todo">Pour aller plus loin
+      <li>Pour aller plus loin
         <ul class="items">
-          <li class="todo">Tests unitaires automatisés (TravisCI ou autre service d&#39;intégration continue)</li>
-          <li class="todo">...</li>
+          <li class="optionnal">Tests unitaires automatisés (TravisCI ou autre service d&#39;intégration continue)</li>
+          <li>...</li>
         </ul>
       </li>
     </ul>
-    <h2 id="-s8-aplication-hybride">Aplication hybride</h2>
+    <h2 id="s8-aplication-hybride">Aplication hybride</h2>
     <p><strong>POINT A DEVELOPPER</strong>, mais en fin de cours:</p>
     <p>Possibilités:</p>
     <ul class="items">
-      <li class="todo">Cordova</li>
-      <li class="todo">NativeScript</li>
-      <li class="todo">Ionic</li>
-      <li class="todo">...</li>
+      <li class="optionnal">Cordova</li>
+      <li class="optionnal">NativeScript</li>
+      <li class="optionnal">Ionic</li>
+      <li>...</li>
     </ul>
-    <h2 id="-s9-10-r-visions-approfondissements-exercices">Révisions, approfondissements, exercices</h2></body>
-
+    <!-- <h2 id="s9-10-r-visions-approfondissements-exercices">Révisions, approfondissements, exercices</h2></body> -->
+    <h2 id="sx-divers">Sujets divers</h2>
+    <ul class="items">
+      <li>Approche des différentes licenses rencontrées<li>
+      <li>Sensibilisation à la sécurité</li>
+    </ul>
 </body>
 </html>
