@@ -6,6 +6,7 @@ body{
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   background-color: #fff;
+  color:#333;
   margin:0;
   padding:0;
   font-size: 12pt;
@@ -15,17 +16,25 @@ h1,h2,h3,h4,h5,h6, .people, .links{
   font-family: 'VT323', monospace;
 }
 
-a{
+a, a:visited{
   text-decoration: none;
   width: auto;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  color:blue;
+}
+a:hover{
+  color:purple;
 }
 
 a[href^="tel:"], code{
   font-family:monospace;
   font-size: .8em;
+}
+
+strong, em{
+   color:#000;
 }
 
 #top{
@@ -96,6 +105,99 @@ a[href^="tel:"], code{
 .success{
   color:green;
 }
+
 .big{
   font-size:1.2em;
 }
+
+.links{
+  display: flex;
+  width:100%;
+}
+
+.links >div{
+  flex: 1 1 auto;
+}
+
+.right{
+  text-align:right;
+}
+
+a.active{
+  text-decoration: underline;
+  color:black;
+}
+
+/*
+ * Missed items
+ */
+.missed::before{
+  content:'\f06a';
+  font-family: FontAwesome;
+  margin-right:.5em;
+}
+
+.missed{
+  color:DarkOrange ;
+}
+.missed strong,
+.missed em{
+  color:orange;
+}
+
+/*
+ * Items seen
+ */
+.done::before{
+  content:'\f05d';
+  font-family: FontAwesome;
+  margin-right:.5em;
+}
+
+.done{
+  color:DarkGreen ;
+}
+.done strong,
+.done em{
+  color:green;
+}
+
+ul.items{
+  list-style-type: none;
+  padding: 0;
+}
+ul.items ul > li{
+   padding:0 1em;
+}
+/*
+ * Optionnal items
+ */
+ .optionnal::before{
+   content:'\f29c';
+   font-family: FontAwesome;
+   margin-right:.5em;
+ }
+
+ .optionnal{
+   color:lightblue ;
+ }
+ .optionnal strong,
+ .optionnal em{
+   color:DarkTurquoise;
+ }
+/*
+ * Todo items
+ */
+ .todo::before{
+   content:'\f10c';
+   font-family: FontAwesome;
+   margin-right:.5em;
+ }
+/*
+ .todo{
+   color:lightblue ;
+ }
+ .todo strong,
+ .todo em{
+   color:DarkTurquoise;
+ }*/
